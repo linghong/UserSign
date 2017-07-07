@@ -40,13 +40,13 @@ describe('Updating records', ()=>{
 
 	it('A model class update one record', (done)=>{
 		assertName(
-			User.findOneAndUpdate({email:'fred@email.com'}, {email: 'fred@newemail.com'}), done
+			User.findOneAndUpdate({password:'fredpassword'}, {password: 'newpassword'}), done
 		);
 	});
 
-	it ('A model class fins a record with an ID and update', (done))=>{
+	it ('A model class finds a record with an ID and update', (done)=>{
 		assertName(
-			User.findByIdAndUpdate(fred._id, {password: newpassword}), done)
+			User.findByIdAndUpdate(fred._id, {password: 'newpassword'}), done
 		);
 	});
 })
