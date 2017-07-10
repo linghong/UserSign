@@ -34,6 +34,5 @@ exports.signup = function(req, res, next){
 
 			res.json({token: tokenForUser(user)});
 		});
-	});
-	
+	});	
 }
